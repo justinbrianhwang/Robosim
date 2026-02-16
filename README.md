@@ -202,45 +202,23 @@ domain_randomization:
 
 ## Available Robots
 
-### Quadruped
-
-| ID | Name | DOF | Weight | Reference |
-|----|------|-----|--------|-----------|
-| `unitree_go2` | Unitree Go2 | 12 | 15 kg | [Official Page](https://www.unitree.com/go2/) |
-| `boston_dynamics_spot` | Boston Dynamics Spot | 12 | 32 kg | [Official Page](https://bostondynamics.com/products/spot/) |
-| `anybotics_anymal_c` | ANYbotics ANYmal C | 12 | 50 kg | [Official Page](https://www.anybotics.com/robotics/anymal/) |
-| `xiaomi_cyberdog2` | Xiaomi CyberDog 2 | 12 | 8.9 kg | [Official Page](https://www.mi.com/cyberdog2) |
-
-### Humanoid
-
-| ID | Name | DOF | Weight | Reference |
-|----|------|-----|--------|-----------|
-| `boston_dynamics_atlas` | Boston Dynamics Atlas | 23 | 89 kg | [Official Page](https://bostondynamics.com/products/atlas/) |
-| `agility_digit` | Agility Digit | 20 | 42 kg | [Official Page](https://www.agilityrobotics.com/solution) |
-| `tesla_optimus` | Tesla Optimus | 22 | 57 kg | [Official Page](https://www.tesla.com/AI) |
-| `figure_01` | Figure 01 | 20 | 60 kg | [Official Page](https://www.figure.ai/) |
-
-### Robot Arm
-
-| ID | Name | DOF | Weight | Reference |
-|----|------|-----|--------|-----------|
-| `franka_panda` | Franka Panda | 7+2 | 18 kg | [Official Page](https://franka.de/) |
-| `universal_robots_ur5e` | Universal Robots UR5e | 6 | 20 kg | [Official Page](https://www.universal-robots.com/products/) |
-| `kuka_iiwa14` | KUKA iiwa 14 | 7 | 30 kg | [Official Page](https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa) |
-
-### Drone
-
-| ID | Name | DOF | Weight | Reference |
-|----|------|-----|--------|-----------|
-| `generic_quadrotor` | Generic Quadrotor | 4 | 1.5 kg | — |
-| `dji_hexarotor` | DJI Hexarotor | 6 | 10 kg | [Official Page](https://www.dji.com/matrice600-pro) |
-
-### Mobile Robot
-
-| ID | Name | DOF | Weight | Reference |
-|----|------|-----|--------|-----------|
-| `differential_drive` | Differential Drive | 2 | 5 kg | — |
-| `ackermann_robot` | Ackermann Robot | 2+1 | 15 kg | — |
+| ID | Name | Category | DOF | Weight |
+|----|------|----------|-----|--------|
+| `unitree_go2` | Unitree Go2 | Quadruped | 12 | 15 kg |
+| `boston_dynamics_spot` | Boston Dynamics Spot | Quadruped | 12 | 32 kg |
+| `anybotics_anymal_c` | ANYbotics ANYmal C | Quadruped | 12 | 50 kg |
+| `xiaomi_cyberdog2` | Xiaomi CyberDog 2 | Quadruped | 12 | 8.9 kg |
+| `boston_dynamics_atlas` | Boston Dynamics Atlas | Humanoid | 23 | 89 kg |
+| `agility_digit` | Agility Digit | Humanoid | 20 | 42 kg |
+| `tesla_optimus` | Tesla Optimus | Humanoid | 22 | 57 kg |
+| `figure_01` | Figure 01 | Humanoid | 20 | 60 kg |
+| `franka_panda` | Franka Panda | Arm | 7+2 | 18 kg |
+| `universal_robots_ur5e` | Universal Robots UR5e | Arm | 6 | 20 kg |
+| `kuka_iiwa14` | KUKA iiwa 14 | Arm | 7 | 30 kg |
+| `generic_quadrotor` | Generic Quadrotor | Drone | 4 | 1.5 kg |
+| `dji_hexarotor` | DJI Hexarotor | Drone | 6 | 10 kg |
+| `differential_drive` | Differential Drive | Mobile | 2 | 5 kg |
+| `ackermann_robot` | Ackermann Robot | Mobile | 2+1 | 15 kg |
 
 ## Project Structure
 
