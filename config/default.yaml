@@ -1,0 +1,57 @@
+simulation:
+  timestep: 0.002
+  control_decimation: 4
+  max_episode_steps: 1000
+  gravity: [0.0, 0.0, -9.81]
+
+robot:
+  name: "unitree_go2"
+
+task:
+  name: "walk_forward"
+  target_velocity: [1.0, 0.0, 0.0]
+  reward:
+    terms:
+      - name: "linear_velocity"
+        weight: 1.0
+      - name: "orientation"
+        weight: 0.5
+      - name: "torque_penalty"
+        weight: -0.0001
+      - name: "action_rate"
+        weight: -0.01
+      - name: "joint_velocity_penalty"
+        weight: -0.001
+
+terrain:
+  type: "flat"
+  friction: 1.0
+  resolution: 0.02
+
+domain_randomization:
+  enabled: false
+  parameters:
+    ground_friction:
+      distribution: "uniform"
+      low: 0.3
+      high: 2.0
+    gravity_z:
+      distribution: "uniform"
+      low: -10.5
+      high: -9.0
+
+logging:
+  enabled: false
+  directory: "logs/"
+  signals:
+    - "joint_positions"
+    - "joint_velocities"
+    - "rewards"
+    - "base_pose"
+
+rendering:
+  width: 1280
+  height: 720
+  vsync: true
+  shadows: true
+  grid: true
